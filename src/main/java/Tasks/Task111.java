@@ -27,4 +27,22 @@ public class Task111 {
         }
         return counter;
     }
+
+    public int minDepthByRecursion(TreeNode root) {
+        return recursion(root);
+    }
+
+    private int recursion(TreeNode children) {
+        if(children == null) {
+            return 0;
+        }
+        int left = recursion(children.left);
+        int right = recursion(children.right);
+
+        if(left == 0 || right == 0) {
+            return left + right + 1;
+        }
+
+        return 1 + Math.min(left, right);
+    }
 }
