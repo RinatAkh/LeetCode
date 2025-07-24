@@ -1,3 +1,5 @@
+package Tasks;
+
 public class Task1004 {
     public int longestOnes(int[] nums, int k) {
         int windowStart = 0;
