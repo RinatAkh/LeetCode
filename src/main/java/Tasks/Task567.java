@@ -5,8 +5,7 @@ import java.util.Map;
 
 public class Task567 {
     public boolean checkInclusion(String str, String pattern) {
-        int windowStart = 0;
-        int matched = 0;
+        int windowStart = 0, matched = 0;
         Map<Character, Integer> charFrequencyMap = new HashMap<>();
 
         for(int i = 0; i < pattern.length(); i++) {

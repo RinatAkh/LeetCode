@@ -11,7 +11,7 @@ public class Task1004 {
                 onesCount++;
             }
 
-            if(windowEnd - windowStart + 1 - onesCount > k) {
+            if( windowEnd - windowStart + 1 - onesCount > k) {
                 if(nums[windowStart] == 1) {
                     onesCount--;
                 }
